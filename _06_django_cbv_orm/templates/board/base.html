@@ -19,8 +19,8 @@
     <strong>Django 뷰 비교</strong>
     <nav>
       <a href="{% url 'board:fbv_list' %}">FBV 목록</a>
-{#      <a href="{% url 'board:cbv_list' %}">CBV 목록</a>#}
-{#      <a href="{% url 'board:cbv_create' %}">새 글 작성(CBV)</a>#}
+      <a href="{% url 'board:cbv_list' %}">CBV 목록</a>
+      <a href="{% url 'board:cbv_create' %}">새 글 작성(CBV)</a>
     </nav>
   </div></header>
   <main class="wrap"><p class="label">현재 페이지: {{ page_label }}</p>{% block content %}{% endblock %}</main>

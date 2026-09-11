@@ -4,7 +4,7 @@ from django.views.generic import CreateView, DetailView, ListView
 from .forms import PostForm
 from .models import Post
 
-
+# 게시글 "목록 조회" View - ListView 상속 -> pk가 필수로 전달 되어야 한다
 class PostListView(ListView):
     model = Post
     template_name = "board/post_list.html"
@@ -14,7 +14,11 @@ class PostListView(ListView):
 
     def get_context_data(self, **kwargs):
         # 부모가 만든 posts 문맥을 먼저 유지한 뒤 화면용 값을 더한다.
+
+        # 부모(ListView)가 지정된 모델(Post) 테이블에서 목록 조회를 자동 실행
+        # -> 조회가 완료되면 부모의 context에 담아둔다
         context = super().get_context_data(**kwargs)
+
         context.update({
             "detail_url_name": "board:cbv_detail",
             "list_url_name": "board:cbv_list",
@@ -39,6 +43,7 @@ class PostCreateView(CreateView):
     form_class = PostForm
     template_name = "board/post_form.html"
 
+    # INSERT 성공 시 리다이렉트 할 URL 반환
     def get_success_url(self):
         # 저장된 self.object의 pk를 상세 URL 인자로 전달한다.
         return reverse("board:cbv_detail", kwargs={"pk": self.object.pk})
