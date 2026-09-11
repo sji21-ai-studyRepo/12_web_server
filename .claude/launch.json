@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "cbv_orm",
+      "runtimeExecutable": "C:\\conda\\envs\\django_env\\python.exe",
+      "runtimeArgs": ["_06_django_cbv_orm/manage.py", "runserver", "8006"],
+      "port": 8006
+    },
+    {
+      "name": "drf",
+      "runtimeExecutable": "C:\\conda\\envs\\django_env\\python.exe",
+      "runtimeArgs": ["_07_django_restframework/manage.py", "runserver", "8007"],
+      "port": 8007
+    }
+  ]
+}
