@@ -1,0 +1,95 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$oD1duOxeZyUPXHwtgyiyH7$kDJRGwE/doY5qdkbj39YOr+GYA0CvygDTSuBilGk2hI=",
+    "last_login": "2026-09-10T00:16:02.022Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "sr19960229@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-09-09T07:30:26.053Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$UPp24JneCrz7gBiiPXp9Wq$HB1bVm4md1TTjPpa5l90xHXQoH92uS46ND05glwgZZI=",
+    "last_login": "2026-09-10T00:35:20.037Z",
+    "is_superuser": false,
+    "username": "user01",
+    "first_name": "",
+    "last_name": "",
+    "email": "user01@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-10T00:35:19.587Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "qna.question",
+  "pk": 1,
+  "fields": {
+    "author": 1,
+    "subject": "점심 추천",
+    "content": "뭐먹지",
+    "created_at": "2026-09-09T08:20:06.751Z",
+    "modified_at": "2026-09-09T08:20:06.751Z",
+    "voters": []
+  }
+},
+{
+  "model": "qna.question",
+  "pk": 2,
+  "fields": {
+    "author": 1,
+    "subject": "0910테스트",
+    "content": "오늘점심메뉴 추천",
+    "created_at": "2026-09-10T00:15:31.207Z",
+    "modified_at": "2026-09-10T00:15:31.207Z",
+    "voters": []
+  }
+},
+{
+  "model": "qna.question",
+  "pk": 3,
+  "fields": {
+    "author": 2,
+    "subject": "뉴비",
+    "content": "ㅁㅇㄴㄻㄹㅇ",
+    "created_at": "2026-09-10T00:35:35.400Z",
+    "modified_at": "2026-09-10T00:35:35.401Z",
+    "voters": []
+  }
+},
+{
+  "model": "qna.question",
+  "pk": 4,
+  "fields": {
+    "author": 2,
+    "subject": "새질문",
+    "content": ".",
+    "created_at": "2026-09-10T01:26:20.209Z",
+    "modified_at": "2026-09-10T01:26:20.209Z",
+    "voters": []
+  }
+},
+{
+  "model": "uauth.userdetail",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "birthday": "2026-09-10",
+    "profile": ""
+  }
+}
+]
